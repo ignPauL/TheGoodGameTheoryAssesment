@@ -1,4 +1,4 @@
-.quote-card {
+/* .quote-card {
     border: 1px solid #ccc;
     padding: 16px;
     margin: 16px;
@@ -23,5 +23,65 @@
   
   .quote-card button:hover {
     background-color: #f0f0f0;
+  }
+   */
+
+   .quote-card {
+    border: 2px solid #ff6b6b;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    text-align: center;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .quote-card p {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    animation: popIn 0.5s ease-out;
+  }
+  
+  .quote-card button {
+    margin: 10px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background: #ff6b6b;
+    color: #fff;
+    font-size: 1em;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .quote-card button:hover {
+    background: #ff4757;
+    transform: scale(1.1);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes popIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
   }
   
